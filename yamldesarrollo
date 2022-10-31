@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: web-go
+  name: web-go-desa
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -93,7 +93,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /desa
         pathType: Prefix
         backend:
           service:
