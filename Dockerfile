@@ -11,3 +11,5 @@ FROM scratch
 COPY --from=0 /go/bin/web /
 
 ENTRYPOINT ["/web"]
+
+
